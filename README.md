@@ -54,7 +54,7 @@ Good Luck!
 `$ yo bannertime:copy`
 
 ## Notes:
-It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap) to get an understanding of how the greenock animation library works. 
+It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap) to get an understanding of how the GSAP animation library works. 
 
 * scale: - Allows you to change the size of object.
 * x: Horizontal plane
