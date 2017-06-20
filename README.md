@@ -35,7 +35,8 @@ The aim of this to test is to try and create a 160x600 version of the existing b
 
 You should not overwrite the existing banner but make a copy that you can amend to make the correct size.
 
-Good Luck!
+Good Luck!![storyboard-160x600.jpg](https://bitbucket.org/repo/x8Xo98z/images/970992812-storyboard-160x600.jpg)
+
 
 ## Working with bannertime
 ### Quick Start:
