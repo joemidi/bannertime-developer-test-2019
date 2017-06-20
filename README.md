@@ -28,3 +28,34 @@ The banner animation is run by the `animate` function.
 By default we are using TweenLite with TimelineLite, but you can change which flavour of GSAP as you require.
 
 For more information about animating using GSAP head to [www.greensock.com](http://www.greensock.com)
+
+## Instructions
+
+The aim of this to test is to try and create a 160x600 version of the existing banner. You will need to follow the storyboard you have been provided to see how the finished 160x600 banner should look.
+
+You should not overwrite the existing banner but make a copy that you can amend to make the correct size.
+
+Good Luck!
+
+## Working with bannertime
+### Quick Start:
+
+### Install Yeoman, Yarn, Gulp and Bannertime
+`$ npm i -g yo yarn gulp generator-bannertime`
+
+### Make a new directory and cd into it
+`$ mkdir my-campaign`
+`$ cd my-campaign`
+
+### Run Bannertime
+`$ yo bannertime`
+
+### Copy existing banner
+`$ yo bannertime:copy`
+
+## Notes:
+It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap) to get an understanding of how the greenock animation library works. 
+
+* scale: - Allows you to change the size of object.
+* x: Horizontal plane
+* y: Vertical plane
