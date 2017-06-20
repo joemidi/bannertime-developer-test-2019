@@ -50,6 +50,9 @@ Good Luck!
 ### Run Bannertime
 `$ yo bannertime`
 
+### Run gulp
+`$ gulp`
+
 ### Copy existing banner
 `$ yo bannertime:copy`
 
