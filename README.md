@@ -14,7 +14,7 @@ In order to use this repo please fork it by using the following instructions.
 * 1) Click the + icon on the side bar on the right. 
 * 2) Click on fork this repository.
 
-Once the task has been completed push the work back up to your forked repo and add dev-kp to it so the challenge can be assesed. 
+Once the task has been completed push the work back up to your forked repo and add **dev-kp** to it so the challenge can be assesed. 
 
 ## Working with bannertime
 ### Quick Start:
