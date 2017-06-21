@@ -5,15 +5,16 @@ The aim of this to test is to try and create a 160x600 version of the existing b
 
 You should not overwrite the existing banner but make a copy that you can amend to make the correct size.
 
+Good Luck!![storyboard-160x600.jpg](https://bitbucket.org/repo/x8Xo98z/images/970992812-storyboard-160x600.jpg)
+
 ##How to use the repo
 
 In order to use this repo please fork it by using the following instructions.
-* Click the + icon on the side bar on the right. 
-* Click on fork this repository.
+
+* 1) Click the + icon on the side bar on the right. 
+* 2) Click on fork this repository.
 
 Once the task has been completed push the work back up to your forked repo and add dev-kp to it so the challenge can be assesed. 
-
-Good Luck!![storyboard-160x600.jpg](https://bitbucket.org/repo/x8Xo98z/images/970992812-storyboard-160x600.jpg)
 
 ## Working with bannertime
 ### Quick Start:
@@ -42,7 +43,6 @@ It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap
 * scale: - Allows you to change the size of object.
 * x: Horizontal plane
 * y: Vertical plane
-
 
 Its Duncan Bannertime!
 
