@@ -69,15 +69,13 @@ npm install --global generator-bannertime
 `$ cd developer-interview-test-2017/`
 
 ###Run yarn istall
-`$ yarn install`
+`$ yarn`
 
 ### Run Gulp
 `$ gulp`
 
 ### Copy existing banner
 `$ yo bannertime:copy`
-
-for more information on how to install bannertime and npm plase check [here](https://bitbucket.org/zlalani/dev-init).
 
 ## Notes:
 It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap) to get an understanding of how the GSAP animation library works. 
