@@ -1,7 +1,50 @@
 # developer-interview-test-2017
+# BREIF
+
+The aim of this to test is to try and create a 160x600 version of the existing banner. You will need to follow the storyboard.jpg you have been provided within the src/developer-interview-text-2017-300x250/images/ to see how the finished 160x600 banner should look.
+
+You should not overwrite the existing banner but make a copy that you can amend to make the correct size.
+
+##How to use the repo
+
+In order to use this repo please fork it by using the following instructions.
+* Click the + icon on the side bar on the right. 
+* Click on fork this repository.
+
+Once the task has been completed push the work back up to your forked repo and add dev-kp to it so the challenge can be assesed. 
+
+Good Luck!![storyboard-160x600.jpg](https://bitbucket.org/repo/x8Xo98z/images/970992812-storyboard-160x600.jpg)
+
+## Working with bannertime
+### Quick Start:
+
+### Install Yeoman, Yarn, Gulp and Bannertime
+`$ npm i -g yo yarn gulp generator-bannertime`
+
+### Make a new directory and cd into it
+`$ mkdir my-campaign`
+`$ cd my-campaign`
+
+### Run Bannertime
+`$ yo bannertime`
+
+### Run gulp
+`$ gulp`
+
+### Copy existing banner
+`$ yo bannertime:copy`
+
+for more information on how to install bannertime and npm plase check [here](https://bitbucket.org/zlalani/dev-init).
+
+## Notes:
+It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap) to get an understanding of how the GSAP animation library works. 
+
+* scale: - Allows you to change the size of object.
+* x: Horizontal plane
+* y: Vertical plane
+
 
 Its Duncan Bannertime!
-
 
 ## Usage
 
@@ -28,38 +71,3 @@ The banner animation is run by the `animate` function.
 By default we are using TweenLite with TimelineLite, but you can change which flavour of GSAP as you require.
 
 For more information about animating using GSAP head to [www.greensock.com](http://www.greensock.com)
-
-## Instructions
-
-The aim of this to test is to try and create a 160x600 version of the existing banner. You will need to follow the storyboard you have been provided to see how the finished 160x600 banner should look.
-
-You should not overwrite the existing banner but make a copy that you can amend to make the correct size.
-
-Good Luck!![storyboard-160x600.jpg](https://bitbucket.org/repo/x8Xo98z/images/970992812-storyboard-160x600.jpg)
-
-
-## Working with bannertime
-### Quick Start:
-
-### Install Yeoman, Yarn, Gulp and Bannertime
-`$ npm i -g yo yarn gulp generator-bannertime`
-
-### Make a new directory and cd into it
-`$ mkdir my-campaign`
-`$ cd my-campaign`
-
-### Run Bannertime
-`$ yo bannertime`
-
-### Run gulp
-`$ gulp`
-
-### Copy existing banner
-`$ yo bannertime:copy`
-
-## Notes:
-It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap) to get an understanding of how the GSAP animation library works. 
-
-* scale: - Allows you to change the size of object.
-* x: Horizontal plane
-* y: Vertical plane
