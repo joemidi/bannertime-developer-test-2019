@@ -68,7 +68,7 @@ npm install --global generator-bannertime
 ## CD into the project folder
 `$ cd developer-interview-test-2017/`
 
-###Run yarn istall
+###Run yarn
 `$ yarn`
 
 ### Run Gulp
