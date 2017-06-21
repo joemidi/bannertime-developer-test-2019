@@ -19,18 +19,17 @@ Once the task has been completed push the work back up to your forked repo and a
 ## Working with bannertime
 ### Quick Start:
 
-### Install Yeoman, Yarn, Gulp and Bannertime
-`$ npm i -g yo yarn gulp generator-bannertime`
+### clone the repo
+`$ git clone https://username@bitbucket.org/zlalani/developer-interview-test-2017.git`
 
-### Make a new directory and cd into it
-`$ mkdir my-campaign`
-`$ cd my-campaign`
+## CD into the project folder
+`$ cd developer-interview-test-2017/`
 
-### Run Bannertime
-`$ yo bannertime`
+###Run yarn istall
+`$ yarn install`
 
-### Run gulp
-`$ gulp`
+### Run Gulp
+`$ gulp`
 
 ### Copy existing banner
 `$ yo bannertime:copy`
