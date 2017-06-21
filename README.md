@@ -19,6 +19,49 @@ Once the task has been completed push the work back up to your forked repo and a
 ## Working with bannertime
 ### Quick Start:
 
+#### Setup - Install Gulp Yeoman and Bannertime:
+[Node.js](https://nodejs.org/en/) To install Node.js we don’t use the standard installer, instead we use nvm a Node version manager, which allows you to switch between Node versions depending on the project.
+
+```bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
+```
+
+You may find that nvm is still unavailable after restarting Terminal, in this case you will need to add it to your ~/.bash_profile
+
+To edit your ~/.bash_profile:
+```bash
+vim ~/.bash_profile
+```
+
+And add these lines:
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+```
+Restart your terminal
+
+Install and Use npm Now that we have nvm installed, we now can use it to manage our Node versions. We are currently using the latest stable version of Node.
+```bash
+nvm install stable
+nvm use stable
+nvm alias default node
+```
+
+[Gulp](http://gulpjs.com/) Our prefered task runner is Gulp, we use this to automate processes such as compiling SASS into CSS, checking our Javascript files for syntax errors and minifying our image files.
+```bash
+npm install --global gulp
+```
+
+[Yeoman](http://yeoman.io/) helps you to kickstart new projects, prescribing best practices and tools to help you stay productive, at the moment we only really use Yeoman for Bannertime.
+```bash
+npm install --global yo
+```
+
+[Bannertime](https://github.com/pyramidium/generator-bannertime) is a yeoman generator we built in-house to help with the creation of banners. It provides you with some of the best practises for creating HTML5 banners, and we currently use it on all our campaign projects.
+```bash
+npm install --global generator-bannertime
+```
+
 ### clone the repo
 `$ git clone https://username@bitbucket.org/zlalani/developer-interview-test-2017.git`
 
