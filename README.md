@@ -44,7 +44,6 @@ It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap
 * y: Vertical plane
 
 Its Duncan Bannertime!
-
 ## Usage
 
 Use `gulp` to automatically launch the banner into the browser with browsersync all your changes will be reflected in the browser with each file save.
