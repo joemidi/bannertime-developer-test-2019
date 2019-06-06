@@ -10,9 +10,8 @@ The task below simulates a typical production brief.
 Create a 160x600 (Width x Height) banner from the existing 300x250 banner.
 
 Here is a storyboard of how the banner should look.
-![160x600 Storyboard][storyboard-160x600.jpg]
 
-[storyboard-160x600.jpg](storyboards/storyboard-160x600.jpg)
+![160x600 Storyboard](storyboards/storyboard-160x600.jpg)
 
 You should not overwrite the existing banner but create a copy that you can adapt to the correct size.
 
