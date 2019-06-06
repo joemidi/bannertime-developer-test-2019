@@ -126,13 +126,13 @@ Banner.prototype.setup = function () {
 
   this.logo.center();
 
-  for(var c = 1; c <= 4; c++){
+  for (let c = 1; c <= 4; c++) {
     this[`logo${c}`].center();
   }
 
-  for(var d = 1; d <= 4; d++){
+  for (let d = 1; d <= 4; d++) {
     this[`copy${d}`].center();
-    if( d == 1 || d == 3){
+    if( d === 1 || d === 3){
       this[`copy${d}`].set({ top: '-=15', scale: 0.3, autoAlpha: 0 });
     }
     else{
@@ -140,11 +140,11 @@ Banner.prototype.setup = function () {
     }
   }
 
-  for(var e = 1; e <= 3; e++){
+  for (let e = 1; e <= 3; e++) {
     this[`plat${e}`].center();
   }
 
-  this.scribble.set({ top: '+=105', left: '-=40' })
+  this.scribble.set({ top: '+=105', left: '-=40' });
 
   this.icons = [this.logo1, this.logo2, this.logo3, this.logo4];
   this.servers = [this.plat1, this.plat2, this.plat3];
@@ -162,48 +162,44 @@ Banner.prototype.hidePreloader = function () {
  * Animation timeline.
  */
 Banner.prototype.animate = function () {
-  var _this = this;
-
-
- 
+  let _this = this;
 
   function copyAnimation(copy1, copy2) {
-    var tl = new TimelineLite({ paused:true })
+    let tl = new TimelineLite({ paused:true })
       .staggerTo([copy1, copy2], 0.5, { scale: 1, autoAlpha: 1, ease:Power3.easeIn }, 1, 'in')
-      .to(copy1, .5, { scale: 3, y: -150, autoAlpha: 0, ease:Power3.easeIn }, "out+=.5")
-      .to(copy2, .5, { scale: 3, y: 150, autoAlpha: 0, ease:Power3.easeIn }, "out+=.5");
+      .to(copy1, 0.5, { scale: 3, y: -150, autoAlpha: 0, ease:Power3.easeIn }, 'out+=0.5')
+      .to(copy2, 0.5, { scale: 3, y: 150, autoAlpha: 0, ease:Power3.easeIn }, 'out+=0.5');
 
       return tl;
   }
 
 
   this.timeline = new TimelineMax({ })
-
     .addLabel('start', 0)
-    .to(this.logo, 0.5, { scale: 0.3, autoAlpha: 0, ease:Power2.easeOut }, '+=1')
+    .to(this.logo, 0.5, { scale: 0.3, autoAlpha: 0, ease:Power2.easeOut }, '+=1');
 
-    this.icons.forEach(function(item, index){
-      if( index == 3 ){
-        _this.timeline.fromTo(item, 0.2, { scaleX: 0, opacity: 0.4 }, { autoAlpha: 1, scaleX: 1, ease:Power2.easeOut })
-      }
-      else{
-        _this.timeline.fromTo(item, 0.2, { scaleX: 0, opacity: 0.4 }, { autoAlpha: 1, scaleX: 1, ease:Power2.easeOut })
+  this.icons.forEach(function(item, index){
+    if( index === 3 ){
+      _this.timeline.fromTo(item, 0.2, { scaleX: 0, opacity: 0.4 }, { autoAlpha: 1, scaleX: 1, ease:Power2.easeOut });
+    }
+    else{
+      _this.timeline.fromTo(item, 0.2, { scaleX: 0, opacity: 0.4 }, { autoAlpha: 1, scaleX: 1, ease:Power2.easeOut })
         .to(item, 0.3, { scaleX: 0, opacity: 0.4, ease:Power2.easeIn }, '+=0.3')
         .set(item, { autoAlpha: 0 });
-      }
-    })
+    }
+  });
 
-    this.timeline.from(this.scribble, 0.001, { autoAlpha:0 }, '+=1.2')
+  this.timeline.from(this.scribble, 0.001, { autoAlpha:0 }, '+=1.2')
     .to(this.scribble, 0.52, { backgroundPosition: '-5100px, 0', ease:SteppedEase.config(12) })
     .to([this.scribble, this.logo4], 0.3, { autoAlpha: 0 }, '+=1')
-    .add(copyAnimation(this.copy1, this.copy2).play())
+    .add(copyAnimation(this.copy1, this.copy2).play());
 
-    this.servers.forEach(function(item, index){
-        _this.timeline.from(item, 0.5 , { scale: 4.5, autoAlpha: 0, ease: Bounce.easeOut })
-        .to(item, 0.4, { autoAlpha: 0 }, '+=0.3')
-      });
+  this.servers.forEach(function(item) {
+    _this.timeline.from(item, 0.5 , { scale: 4.5, autoAlpha: 0, ease: Bounce.easeOut })
+      .to(item, 0.4, { autoAlpha: 0 }, '+=0.3');
+    });
     this.timeline.set(this.logo, { scale: 4.5, autoAlpha: 0, ease: Bounce.easeOut })
-    .to(this.logo, 1 , { scale: 1, autoAlpha: 1, ease: Bounce.easeOut })
+      .to(this.logo, 1 , { scale: 1, autoAlpha: 1, ease: Bounce.easeOut });
 
 
 };

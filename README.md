@@ -1,51 +1,65 @@
-# developer-interview-test-2017
-# BREIF
+# Bannertime Developer Test 2019
+# Introduction
 
-The aim of this to test is to try and create a 160x600 version of the existing banner. You will need to follow the storyboard.jpg you have been provided within the src/developer-interview-text-2017-300x250/images/ to see how the finished 160x600 banner should look.
+The purpose of this test is to familiarise a candidate with a few concepts used in Bannertime, Greensock and general Animation for the Web.
 
-You should not overwrite the existing banner but make a copy that you can amend to make the correct size.
+The task below simulates a typical production brief.
 
-Good Luck!![storyboard-160x600.jpg](https://bitbucket.org/repo/x8Xo98z/images/970992812-storyboard-160x600.jpg)
+## Task
 
-##How to use the repo
+Create a 160x600 (Width x Height) banner from the existing 300x250 banner.
 
-In order to use this repo please fork it by using the following instructions.
+Here is a storyboard of how the banner should look.
+![160x600 Storyboard][storyboard-160x600.jpg]
 
-* 1) Click the + icon on the side bar on the right. 
-* 2) Click on fork this repository.
+[storyboard-160x600.jpg](storyboards/storyboard-160x600.jpg)
 
-Once the task has been completed push the work back up to your forked repo and add **dev-kp** to it so the challenge can be assessed. 
+You should not overwrite the existing banner but create a copy that you can adapt to the correct size.
+
+There is no time limit to the test but please try and keep a note of how long you spend on it.
+You also do not need to complete the task to hand-in this test.
+
+## Getting Started
+
+### Creating a Fork
+
+In order to use this [repo](https://confluence.atlassian.com/bitbucket/repositories-675385631.html) please [fork](https://confluence.atlassian.com/bitbucket/forking-a-repository-221449527.html) it by using the following instructions.
+
+* 1) Click the + icon on the side bar on the right
+* 2) Click on [Fork this repository](https://bitbucket.org/jf-cdp/bannertime-developer-test-2019/fork)
+
+### Installing Dependencies
+
+Provided that your node environment has already been setup, you would need to install the dependencies and then run gulp.
+
+```
+$ npm install
+// This will install all the dependency modules needed to run the repo
+```
+
+```
+$ gulp
+// This will start a local server for you to use to develop
+```
+
+### Creating a commit and pushing your work
+
+Once you are ready to hand-in your work, you will need to create a [commit and push](https://confluence.atlassian.com/bitbucketserver062/commit-and-push-changes-to-bitbucket-server-969536562.html) the work back up to your own forked repo and then [add users](https://confluence.atlassian.com/bitbucketserver/using-repository-permissions-776639771.html); **dev-kp** and **joe_midi** so that the test can be assessed. 
 
 ## Working with bannertime
-### Quick Start:
 
-#### Setup - Install Gulp Yeoman and Bannertime:
-[Node.js](https://nodejs.org/en/) To install Node.js we don’t use the standard installer, instead we use nvm a Node version manager, which allows you to switch between Node versions depending on the project.
+### Setup - Install Gulp Yeoman and Bannertime:
+[Node.js](https://nodejs.org/en/) To install Node.js we don’t use the standard installer, instead we use nvm a [Node Version Manager](https://github.com/nvm-sh/nvm), which allows you to switch between Node versions depending on the project.
 
 ```bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
 
-You may find that nvm is still unavailable after restarting Terminal, in this case you will need to add it to your ~/.bash_profile
+On OS X, if you get `nvm: command not found` after running the install script, one of the following might be the reason:-
 
-To edit your ~/.bash_profile:
-```bash
-vim ~/.bash_profile
-```
+  - your system may not have a [`.bash_profile file`] where the command is set up. Simply create one with `touch ~/.bash_profile` and run the install script again
+  - you might need to restart your terminal instance. Try opening a new tab/window in your terminal and retry.
 
-And add these lines:
-```bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-```
-Restart your terminal
-
-Install and Use npm Now that we have nvm installed, we now can use it to manage our Node versions. We are currently using the latest stable version of Node.
-```bash
-nvm install stable
-nvm use stable
-nvm alias default node
-```
 
 [Gulp](http://gulpjs.com/) Our prefered task runner is Gulp, we use this to automate processes such as compiling SASS into CSS, checking our Javascript files for syntax errors and minifying our image files.
 ```bash
@@ -62,14 +76,21 @@ npm install --global yo
 npm install --global generator-bannertime
 ```
 
+These three commands can be combined into:
+```bash
+npm i gulp yo generator-bannertime
+```
+
+## Quick Start:
+
 ### clone the repo
-`$ git clone https://username@bitbucket.org/zlalani/developer-interview-test-2017.git`
+`$ git clone git@bitbucket.org:username/bannertime-developer-test-2019.git
 
-## CD into the project folder
-`$ cd developer-interview-test-2017/`
+### CD into the project folder
+`$ cd bannertime-developer-test-2019/`
 
-###Run yarn
-`$ yarn`
+### Install dependencies npm
+`$ npm i`
 
 ### Run Gulp
 `$ gulp`
@@ -84,7 +105,6 @@ It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap
 * x: Horizontal plane
 * y: Vertical plane
 
-Its Duncan Bannertime!
 ## Usage
 
 Use `gulp` to automatically launch the banner into the browser with browsersync all your changes will be reflected in the browser with each file save.
