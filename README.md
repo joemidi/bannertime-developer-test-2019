@@ -7,16 +7,15 @@ The task below simulates a typical production brief.
 
 ## Task
 
-Create a 160x600 (Width x Height) banner from the existing 300x250 banner.
+Adapt a 160x600 (Width x Height) banner from the existing 300x250 Master banner.
 
 Here is a storyboard of how the banner should look.
 
 ![160x600 Storyboard](storyboards/storyboard-160x600.jpg)
 
-You should not overwrite the existing banner but create a copy that you can adapt to the correct size.
+> You should not overwrite the existing banner but create a copy that you can adapt to the correct size.
 
-There is no time limit to the test but please try and keep a note of how long you spend on it.
-You also do not need to complete the task to hand-in this test.
+Do not worry if you are unable to complete the test, and there is no time limit. But keep a note of the issues you encounter and how much time you spend on it.
 
 ## Getting Started
 
@@ -24,8 +23,8 @@ You also do not need to complete the task to hand-in this test.
 
 In order to use this [repo](https://confluence.atlassian.com/bitbucket/repositories-675385631.html) please [fork](https://confluence.atlassian.com/bitbucket/forking-a-repository-221449527.html) it by using the following instructions.
 
-* 1) Click the + icon on the side bar on the right
-* 2) Click on [Fork this repository](https://bitbucket.org/jf-cdp/bannertime-developer-test-2019/fork)
+1) Click the + icon on the side bar on the right
+2) Click on [Fork this repository](https://bitbucket.org/jf-cdp/bannertime-developer-test-2019/fork)
 
 ### Installing Dependencies
 
@@ -33,13 +32,13 @@ Provided that your node environment has already been setup, you would need to in
 
 ```
 $ npm install
-// This will install all the dependency modules needed to run the repo
 ```
+This will install all the dependency modules needed to run the repo
 
 ```
 $ gulp
-// This will start a local server for you to use to develop
 ```
+This will start a local server for you to use to develop
 
 ### Creating a commit and pushing your work
 
@@ -48,7 +47,9 @@ Once you are ready to hand-in your work, you will need to create a [commit and p
 ## Working with bannertime
 
 ### Setup - Install Gulp Yeoman and Bannertime:
-[Node.js](https://nodejs.org/en/) To install Node.js we don’t use the standard installer, instead we use nvm a [Node Version Manager](https://github.com/nvm-sh/nvm), which allows you to switch between Node versions depending on the project.
+
+Bannertime is tool built with [Node.js](https://nodejs.org/en/).
+To install Node.js we don’t use the standard installer, instead we use nvm a [Node Version Manager](https://github.com/nvm-sh/nvm), which allows you to switch between Node versions depending on the project.
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -83,7 +84,7 @@ npm i gulp yo generator-bannertime
 ## Quick Start:
 
 ### clone the repo
-`$ git clone git@bitbucket.org:username/bannertime-developer-test-2019.git
+`$ git clone git@bitbucket.org:username/bannertime-developer-test-2019.git`
 
 ### CD into the project folder
 `$ cd bannertime-developer-test-2019/`
@@ -100,9 +101,9 @@ npm i gulp yo generator-bannertime
 ## Notes:
 It is important to check out [www.greensock.com/gsap](https://greensock.com/gsap) to get an understanding of how the GSAP animation library works. 
 
-* scale: - Allows you to change the size of object.
-* x: Horizontal plane
-* y: Vertical plane
+* `scale`: - Allows you to change the size of object.
+* `x`: Horizontal plane
+* `y`: Vertical plane
 
 ## Usage
 
