@@ -23,8 +23,8 @@ Do not worry if you are unable to complete the test, and there is no time limit.
 
 In order to use this [repo](https://confluence.atlassian.com/bitbucket/repositories-675385631.html) please [fork](https://confluence.atlassian.com/bitbucket/forking-a-repository-221449527.html) it by using the following instructions.
 
-1) Click the + icon on the side bar on the right
-2) Click on [Fork this repository](https://bitbucket.org/jf-cdp/bannertime-developer-test-2019/fork)
+1. Click the + icon on the side bar on the right
+2. Click on [Fork this repository](https://bitbucket.org/jf-cdp/bannertime-developer-test-2019/fork)
 
 ### Installing Dependencies
 
