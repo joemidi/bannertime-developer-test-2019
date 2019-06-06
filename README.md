@@ -13,7 +13,7 @@ Here is a storyboard of how the banner should look.
 
 ![160x600 Storyboard](storyboards/storyboard-160x600.jpg)
 
-> You should not overwrite the existing banner but create a copy that you can adapt to the correct size.
+_You should not overwrite the existing banner but create a copy that you can adapt to the correct size._
 
 Do not worry if you are unable to complete the test, and there is no time limit. But keep a note of the issues you encounter and how much time you spend on it.
 
