@@ -1,0 +1,13 @@
+{
+  "name": "developer-interview-test-2019",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:joemidi/bannertime-developer-test-2019.git"
+  }
+}
